@@ -1,5 +1,6 @@
 document.getElementById("generate").addEventListener("click", function () {
   const apiKey = document.getElementById("api-key").value;
+  const name = document.getElementById("name").value;
   const context = document.getElementById("context").value;
   const tone = document.getElementById("tone").value;
   const accuracy = document.getElementById("accuracy").value;
@@ -19,7 +20,7 @@ document.getElementById("generate").addEventListener("click", function () {
     },
     {
       role: "user",
-      content: `Generate a ${tone.toLowerCase()} message, ensuring ${accuracy.toLowerCase()} accuracy. Length: ${lengthDescriptor.toLowerCase()}.`,
+      content: `Generate a ${tone.toLowerCase()} email submission message from ${name.toLowerCase()}, ensuring ${accuracy.toLowerCase()} accuracy. Length: ${lengthDescriptor.toLowerCase()}.`,
     },
   ];
 

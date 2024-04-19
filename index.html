@@ -24,6 +24,13 @@
         class="block w-full mb-4 p-2 border rounded"
         placeholder="Enter your API key here"
       />
+      <hr />
+      <input
+        type="text"
+        id="name"
+        class="block w-full mb-4 p-2 border rounded"
+        placeholder="Your Name"
+      />
       <textarea
         id="context"
         class="block w-full mb-4 p-2 border rounded"
@@ -31,8 +38,11 @@
       ></textarea>
       <div class="flex flex-wrap flex-auto w-full">
         <div class="flex-auto p-1">
-          <h3 class="mb-1">Message Tone</h3>
-          <select id="tone" class="block w-full mb-4 p-2 border rounded">
+          <p class="mb-2 text-sm">✍ Message Tone</p>
+          <select
+            id="tone"
+            class="block w-full p-2 border rounded font-semibold"
+          >
             <option>Friendly</option>
             <option>Formal</option>
             <option>Persuasive</option>
@@ -40,16 +50,22 @@
           </select>
         </div>
         <div class="flex-auto p-1">
-          <h2 class="mb-1">Spelling Accuracy</h2>
-          <select id="accuracy" class="block w-full mb-4 p-2 border rounded">
+          <p class="mb-2 text-sm">🎯 Spelling Accuracy</p>
+          <select
+            id="accuracy"
+            class="block w-full p-2 border rounded font-semibold"
+          >
             <option>High</option>
             <option>Medium</option>
             <option>Low</option>
           </select>
         </div>
         <div class="flex-auto p-1">
-          <h2 class="mb-1">Length</h2>
-          <select id="length" class="block w-full mb-4 p-2 border rounded">
+          <p class="mb-2 text-sm">📜 Length</p>
+          <select
+            id="length"
+            class="block w-full p-2 border rounded font-semibold"
+          >
             <option>Short</option>
             <option>Medium</option>
             <option>Long</option>
